@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ご案内|Kitchen Lab</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="menu.js"></script>
+  </head>
+
+  <body class="sub">
+    <!-- ===== ヘッダー開始 ===== -->
+    <header>
+      <div class="header-inner">
+        <div class="header-menu">
+          <a href="index.html">
+            <img
+              src="images/logo/logo_white.webp"
+              alt="キッチンラボのロゴ"
+              class="header-logo"
+          /></a>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a href="about-us.html" class="header-nav-text">ABOUT US</a>
+              </li>
+              <li>
+                <a href="course.html" class="header-nav-text">COURSE</a>
+              </li>
+              <li>
+                <a href="contact.html" class="header-nav-text">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <a href="https://lin.ee/8rYRCmu" class="header-button">
+          体験レッスンお申込み
+        </a>
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger-menu">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="MenuIcon"
+          >
+            <g id="OpenIcon">
+              <rect class="hm-line" x="4" y="8" width="24" height="3" />
+              <rect class="hm-line" x="4" y="15" width="24" height="3" />
+              <rect class="hm-line" x="4" y="22" width="24" height="3" />
+            </g>
+            <g style="display: none" id="CloseIcon">
+              <rect
+                class="hm-line"
+                x="8.67"
+                y="6.67"
+                width="24"
+                height="3"
+                transform="rotate(45 8.67 6.67)"
+                fill="#fff"
+              />
+              <rect
+                class="hm-line"
+                x="6.67"
+                y="23.67"
+                width="24"
+                height="3"
+                transform="rotate(-45 6.67 23.67)"
+                fill="#fff"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!-- 　SPナビ　 -->
+      <div class="sp-nav">
+        <nav class="sp-nav-menu">
+          <ul class="sp-nav-list">
+            <li>
+              <a href="about-us.html" class="header-nav-text">ABOUT US</a>
+            </li>
+            <li><a href="course.html" class="header-nav-text">COURSE</a></li>
+            <li><a href="contact.html" class="header-nav-text">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="sp-nav-btn">
+          <a href="https://lin.ee/8rYRCmu" class="button-link line-link">
+            <span>公式LINEから</span>体験レッスンお申込み
+          </a>
+          <a
+            href="kitchen_lab.pdf"
+            download="Kitchen Lab紹介資料.pdf"
+            class="button-link information-link"
+          >
+            資料ダウンロード
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- ===== ヘッダー終了 ===== -->
+
+    <!-- ===== メイン：ページタイトル ===== -->
+    <main>
+      <div class="page-title">
+        <h1>お問い合わせ</h1>
+      </div>
+      <!-- ===== メイン：マップ ===== -->
+      <section class="contact-info container">
+        <h2 class="content-title-under-line">
+          Kitchen LABへの<br class="br-sp" />ご案内
+        </h2>
+        <p>
+          渋谷駅渋谷駅直結<br />街の活気と共に、新たな味と発見を求めてKitchen
+          LABへお越しください。
+        </p>
+        <!-- Google Map 埋め込み -->
+        <div class="contact-info-map">
+          <iframe
+            title="Kitchen LABの地図"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.618205964837!2d139.6980776!3d35.661777099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b4805acc25f%3A0x394ca58248616e68!2z44OL44Ol44O85riL6LC344Kz44O844Od44Op44K5!5e0!3m2!1sja!2sjp!4v1751250669313!5m2!1sja!2sjp"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- ===== メイン：会社情報 ===== -->
+      <section class="company-info container">
+        <table class="company-table">
+          <tr>
+            <th class="info-label">問い合わせ先</th>
+            <td class="info-detail">本部事務局</td>
+          </tr>
+
+          <tr>
+            <th class="info-label">電話番号</th>
+            <td class="info-detail">08-0000-1111</td>
+          </tr>
+
+          <tr>
+            <th class="info-label">電話受付時間</th>
+            <td class="info-detail">
+              <span>
+                月〜金 9:30〜17:30<br />
+                土・日 9:30〜17:00<br />
+                祝　日 9:30〜14:00<br />
+              </span>
+              ※土・日・祝日は電話がつながりにくい場合があります<br />
+              ※お手続きによっては、事務局営業時間内<br />（月〜金　9:30〜17:30）しか承れないものもあります。<br />
+              ※お盆、正月は電話受付は休み
+            </td>
+          </tr>
+
+          <tr>
+            <th class="info-label">住所</th>
+            <td class="info-detail">
+              〒150-6139<br />東京都渋谷区渋谷<br
+                class="br-sp"
+              />2-24-12<br />渋谷スクランブルスクエア
+            </td>
+          </tr>
+
+          <tr>
+            <th class="info-label">最寄り駅</th>
+            <td class="info-detail">
+              <span>JR 山手線 渋谷駅 直結</span><br />
+              東急東横線 / 東急田園都市線 渋谷駅 直結<br />
+              東京メトロ 銀座線 / 副都心線 / 半蔵門線 渋谷駅 直結<br />
+              京王井の頭線 渋谷駅 徒歩5分
+            </td>
+          </tr>
+        </table>
+      </section>
+      <!-- ===== CTAセクション ===== -->
+      <section class="common-apply">
+        <div class="common-apply-inner">
+          <div class="common-apply-messages">
+            <p>
+              あなたの料理で食卓に<br
+                class="messages-br-sp"
+              />笑顔を運びましょう
+            </p>
+            <p>Make dish, Make smile</p>
+          </div>
+          <a
+            href="https://lin.ee/8rYRCmu"
+            class="button-link line-link contact-cta-btn"
+          >
+            <span>公式LINEから</span>体験レッスンお申込み
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== フッター開始 ===== -->
+    <footer>
+      <div class="footer-menu container">
+        <a href="index.html">
+          <img
+            src="images/logo/logo_white.webp"
+            alt="キッチンラボのロゴ"
+            class="footer-logo"
+        /></a>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li>
+              <a href="about-us.html" class="footer-nav-text">ABOUT US</a>
+            </li>
+            <li><a href="course.html" class="footer-nav-text">COURSE</a></li>
+            <li><a href="contact.html" class="footer-nav-text">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copy">&copy;Kitchen LAB All rights reserved</p>
+    </footer>
+    <!-- ===== フッター終了 ===== -->
+  </body>
+</html>

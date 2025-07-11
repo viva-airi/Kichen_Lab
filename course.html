@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>コース紹介|Kitchen Lab</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="menu.js"></script>
+  </head>
+
+  <body class="sub">
+    <!-- ===== ヘッダー開始 ===== -->
+    <header>
+      <div class="header-inner">
+        <div class="header-menu">
+          <a href="index.html">
+            <img
+              src="images/logo/logo_white.webp"
+              alt="キッチンラボのロゴ"
+              class="header-logo"
+          /></a>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a href="about-us.html" class="header-nav-text">ABOUT US</a>
+              </li>
+              <li><a href="course.html" class="header-nav-text">COURSE</a></li>
+              <li>
+                <a href="contact.html" class="header-nav-text">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <a href="https://lin.ee/8rYRCmu" class="header-button">
+          体験レッスンお申込み
+        </a>
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger-menu">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="MenuIcon"
+          >
+            <g id="OpenIcon">
+              <rect class="hm-line" x="4" y="8" width="24" height="3" />
+              <rect class="hm-line" x="4" y="15" width="24" height="3" />
+              <rect class="hm-line" x="4" y="22" width="24" height="3" />
+            </g>
+            <g style="display: none" id="CloseIcon">
+              <rect
+                class="hm-line"
+                x="8.67"
+                y="6.67"
+                width="24"
+                height="3"
+                transform="rotate(45 8.67 6.67)"
+                fill="#fff"
+              />
+              <rect
+                class="hm-line"
+                x="6.67"
+                y="23.67"
+                width="24"
+                height="3"
+                transform="rotate(-45 6.67 23.67)"
+                fill="#fff"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!-- 　SPナビ　 -->
+      <div class="sp-nav">
+        <nav class="sp-nav-menu">
+          <ul class="sp-nav-list">
+            <li>
+              <a href="about-us.html" class="header-nav-text">ABOUT US</a>
+            </li>
+            <li><a href="course.html" class="header-nav-text">COURSE</a></li>
+            <li><a href="contact.html" class="header-nav-text">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="sp-nav-btn">
+          <a href="https://lin.ee/8rYRCmu" class="button-link line-link">
+            <span>公式LINEから</span>体験レッスンお申込み
+          </a>
+          <a
+            href="kitchen_lab.pdf"
+            download="Kitchen Lab紹介資料.pdf"
+            class="button-link information-link"
+          >
+            資料ダウンロード
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- ===== ヘッダー終了 ===== -->
+
+    <!-- ===== メイン：ページタイトル ===== -->
+    <main>
+      <div class="page-title">
+        <h1>コース紹介</h1>
+      </div>
+      <!-- ===== メイン：コース内容の説明 ===== -->
+      <section class="course-introduction container">
+        <h2>料理教室Kitchen LAB</h2>
+        <p class="course-introduction-lead">
+          Kitchen LABでは、豊富な経験を持つシェフによる実践的な指導を通じて、<br />料理のスキルを確実にレベルアップさせることをお約束します。
+        </p>
+        <p class="course-introduction-text">
+          初心者からプロを目指す方まで、それぞれのニーズに合わせた多彩なコースをご用意しています。モダンで快適なキッチンスタジオで、和食や洋食、スイーツ、エスニック料理など、幅広いジャンルの料理を学び、料理の楽しさを体感してください。個人のペースに合わせた指導で、家庭料理から特別な日のレシピまで、確かなスキルを習得していただけます。
+        </p>
+      </section>
+      <!-- ===== メイン：コース一覧 ===== -->
+      <section class="courses-wrap container">
+        <h2 class="content-title-under-line">コース一覧</h2>
+        <div class="courses">
+          <div class="course">
+            <div class="name course1">
+              <div>家庭料理</div>
+            </div>
+            <p>
+              和食、洋食、中華の基本的な家庭料理を学びます。料理初心者や基礎をしっかり学びたい方におすすめ。
+            </p>
+          </div>
+          <div class="course">
+            <div class="name course2">
+              <div>ヘルシー料理</div>
+            </div>
+            <p>
+              低カロリーで栄養バランスの取れた料理を学びます。健康を気遣う方やダイエット中の方におすすめ。
+            </p>
+          </div>
+          <div class="course">
+            <div class="name course3">
+              <div>スイーツ</div>
+            </div>
+            <p>
+              クッキーやケーキなどの基本的なスイーツからテクニックが必要なデザートまで幅広く学びます。スイーツ好きの方におすすめ。
+            </p>
+          </div>
+          <div class="course">
+            <div class="name course4">
+              <div>おもてなし料理</div>
+            </div>
+            <p>
+              パーティや特別な日のための華やかな料理を学びます。お家でおもてなしをする方におすすめ。
+            </p>
+          </div>
+          <div class="course">
+            <div class="name course5">
+              <div>エスニック</div>
+            </div>
+            <p>
+              タイ、インド、ベトナムなど、世界中のエスニック料理を学びます。スパイスやハーブの使い方を学び、家庭でも本格的なエスニック料理を楽しみたい方におすすめ。
+            </p>
+          </div>
+          <div class="course">
+            <div class="name course6">
+              <div>ベジタリアン</div>
+            </div>
+            <p>
+              肉を使わず、野菜や豆類を中心にした美味しくバランスの取れた料理を学びます。ベジタリアンの方や、植物性の食事に興味がある方におすすめ。
+            </p>
+          </div>
+          <div class="course">
+            <div class="name course7">
+              <div>パン作り</div>
+            </div>
+            <p>
+              基本的なパン作りから、発酵技術を使った本格的なパンまで学べます。パン作りに挑戦したい方や、焼きたてパンを楽しみたい方におすすめ。
+            </p>
+          </div>
+          <div class="course">
+            <div class="name course8">
+              <div>魚料理</div>
+            </div>
+            <p>
+              魚を使った和食や洋食、中華など、多様な魚料理のテクニックを学びます。新鮮な魚のさばき方から、プロの調理法まで、魚料理が好きな方におすすめ。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ===== フッター開始 ===== -->
+    <footer>
+      <div class="footer-menu container">
+        <a href="index.html">
+          <img
+            src="images/logo/logo_white.webp"
+            alt="キッチンラボのロゴ"
+            class="footer-logo"
+        /></a>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li>
+              <a href="about-us.html" class="footer-nav-text">ABOUT US</a>
+            </li>
+            <li><a href="course.html" class="footer-nav-text">COURSE</a></li>
+            <li><a href="contact.html" class="footer-nav-text">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copy">&copy;Kitchen LAB All rights reserved</p>
+    </footer>
+    <!-- ===== フッター終了 ===== -->
+  </body>
+</html>

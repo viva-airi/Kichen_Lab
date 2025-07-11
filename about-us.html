@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>私たちについて|Kitchen Lab</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="menu.js"></script>
+  </head>
+
+  <body class="sub">
+    <!-- ===== ヘッダー開始 ===== -->
+    <header>
+      <div class="header-inner">
+        <div class="header-menu">
+          <a href="index.html">
+            <img
+              src="images/logo/logo_white.webp"
+              alt="キッチンラボのロゴ"
+              class="header-logo"
+          /></a>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a href="about-us.html" class="header-nav-text">ABOUT US</a>
+              </li>
+              <li><a href="course.html" class="header-nav-text">COURSE</a></li>
+              <li>
+                <a href="contact.html" class="header-nav-text">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <a href="https://lin.ee/8rYRCmu" class="header-button">
+          体験レッスンお申込み
+        </a>
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger-menu">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="MenuIcon"
+          >
+            <g id="OpenIcon">
+              <rect class="hm-line" x="4" y="8" width="24" height="3" />
+              <rect class="hm-line" x="4" y="15" width="24" height="3" />
+              <rect class="hm-line" x="4" y="22" width="24" height="3" />
+            </g>
+            <g style="display: none" id="CloseIcon">
+              <rect
+                class="hm-line"
+                x="8.67"
+                y="6.67"
+                width="24"
+                height="3"
+                transform="rotate(45 8.67 6.67)"
+                fill="#fff"
+              />
+              <rect
+                class="hm-line"
+                x="6.67"
+                y="23.67"
+                width="24"
+                height="3"
+                transform="rotate(-45 6.67 23.67)"
+                fill="#fff"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!-- 　SPナビ　 -->
+      <div class="sp-nav">
+        <nav class="sp-nav-menu">
+          <ul class="sp-nav-list">
+            <li>
+              <a href="about-us.html" class="header-nav-text">ABOUT US</a>
+            </li>
+            <li><a href="course.html" class="header-nav-text">COURSE</a></li>
+            <li><a href="contact.html" class="header-nav-text">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="sp-nav-btn">
+          <a href="https://lin.ee/8rYRCmu" class="button-link line-link">
+            <span>公式LINEから</span>体験レッスンお申込み
+          </a>
+          <a
+            href="kitchen_lab.pdf"
+            download="Kitchen Lab紹介資料.pdf"
+            class="button-link information-link"
+          >
+            資料ダウンロード
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- ===== ヘッダー終了 ===== -->
+    <main>
+      <!-- ===== メイン　MV ===== -->
+      <section class="about-mv">
+        <div class="about-mv-inner">
+          <div class="about-mv-content">
+            <h1 class="about-mv-title">
+              Kitchen LABって<br />どんな料理教室？
+            </h1>
+            <p>
+              Kitchen
+              LABは、料理の楽しさと創造性を追求する料理教室です。初心者から上級者まで、すべての方々が自分のペースで学べるよう、様々なコースを用意しています。私たちの教室は、料理を通じて食文化の大切さを伝え、みんなが集まる楽しい場所を提供しています。
+            </p>
+          </div>
+          <img src="images/about/img_about01.webp" alt="調理風景" />
+        </div>
+      </section>
+
+      <section class="about-content-inner">
+        <!-- ===== 　メイン　歴史　history ===== -->
+        <div class="about-section container">
+          <div class="about-history-content">
+            <h2 class="about-content-title">Kitchen LABの歴史</h2>
+            <p class="about-content-text">
+              Kitchen
+              LABは、2010年に設立され、最初は小規模な教室からスタートしました。料理への情熱と共に少しずつ成長し、多くの人々に愛される教室へと発展しました。この数年で、国内外から数多くの受講生を迎え入れ、料理の魅力を広めています。
+            </p>
+          </div>
+          <img src="images/about/img_about02.webp" alt="調理道具の写真" />
+        </div>
+        <!-- ===== メイン　強み　value ===== -->
+        <div class="about-section about-section-reverse container">
+          <div class="about-value-content">
+            <h2 class="about-content-title">Kitchen LABの強み</h2>
+            <p class="about-content-text">
+              私たちの強みは、経験豊富なシェフによる実践的な指導と、最新のキッチン設備を活用した学びの環境です。また、食材の選定から調理法まで、徹底したこだわりを持っており、地元の新鮮な素材を大切にしています。さらに、受講生同士の交流を促進し、楽しいコミュニティを形成しています。
+            </p>
+          </div>
+          <img
+            src="images/about/img_about03.webp"
+            alt="笑顔で調理している女性"
+          />
+        </div>
+        <!-- ===== メイン　サービス内容　service ===== -->
+        <div class="about-section container">
+          <div class="about-service-content">
+            <h2 class="about-content-title">Kitchen LABのサービス内容</h2>
+            <p class="about-content-text">
+              私たちのサービスは、料理教室だけにとどまりません。季節ごとの特別講座や、企業向けのワークショップ、食材の選び方に関するセミナーなど、多岐にわたるプログラムを提供しています。また、オンラインレッスンも導入し、どこにいても学べる環境を整えています。
+            </p>
+          </div>
+          <img src="images/about/img_about04.webp" alt="いろいろな食材" />
+        </div>
+      </section>
+      <!-- ===== メイン　口コミ　review ===== -->
+      <section class="about-review-inner container">
+        <h2 class="about-review-title">お客様の口コミ</h2>
+        <div class="about-review-content-wrap">
+          <div class="about-review-content">
+            <img
+              src="images/about/img_kuchikomi01.webp"
+              alt="女性の顔写真"
+              class="about-review-img"
+            />
+            <div class="about-review-wrap">
+              <p class="about-review-text">
+                <span
+                  >KitchenLABに通うようになってから、料理がもっと楽しくなりました！</span
+                >教え方も丁寧で、毎回新しい発見があります。
+              </p>
+              <p class="about-review-name">（受講生 Aさん）</p>
+            </div>
+          </div>
+          <div class="about-review-content">
+            <img
+              src="images/about/img_kuchikomi02.webp"
+              alt="男性の顔写真"
+              class="about-review-img"
+            />
+            <div class="about-review-wrap">
+              <p class="about-review-text">
+                <span
+                  >実際に作ってみることで、家庭でも挑戦できるようになりました。</span
+                >仲間と一緒に学ぶのも楽しいです！
+              </p>
+              <p class="about-review-name">（受講生 Bさん）</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--　コース一覧ボタン　common-apply -->
+      <section class="common-apply">
+        <div class="common-apply-inner">
+          <div class="common-apply-messages">
+            <p>
+              あなたの料理で食卓に<br
+                class="messages-br-sp"
+              />笑顔を運びましょう
+            </p>
+            <p>Make dish, Make smile</p>
+          </div>
+          <div class="cta-button">
+            <a
+              href="course.html"
+              class="button-link information-link about-cta-btn"
+              >コース一覧</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ===== フッター開始 ===== -->
+    <footer>
+      <div class="footer-menu container">
+        <a href="index.html">
+          <img
+            src="images/logo/logo_white.webp"
+            alt="キッチンラボのロゴ"
+            class="footer-logo"
+        /></a>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li>
+              <a href="about-us.html" class="footer-nav-text">ABOUT US</a>
+            </li>
+            <li><a href="course.html" class="footer-nav-text">COURSE</a></li>
+            <li><a href="contact.html" class="footer-nav-text">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copy">&copy;Kitchen LAB All rights reserved</p>
+    </footer>
+    <!-- ===== フッター終了 ===== -->
+  </body>
+</html>
