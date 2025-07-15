@@ -1,0 +1,1196 @@
+@charset "UTF-8";
+/*　ボディー　*/
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #333333;
+  font-weight: normal;
+  background-color: #fff;
+}
+
+/*　共通 　*/
+
+.container {
+  max-inline-size: 1072px;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+/* ボタン　コンポーネント　*/
+
+.button-link {
+  width: 280px;
+  height: 88px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
+
+/*　体験レッスン　グリーン　*/
+
+.line-link {
+  background-color: #4ab817;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.line-link span {
+  background-color: #fff;
+  border-radius: 16px;
+  color: #4ab817;
+  font-size: 14px;
+  font-weight: bold;
+  padding-block: 2px;
+  padding-inline: 16px;
+}
+
+/*　資料ダウンロード　オレンジ　*/
+
+.information-link {
+  background-color: #f76140;
+}
+
+/* ----------------------------------------------------------
+  ヘッダー
+---------------------------------------------------------- */
+
+header {
+  max-inline-size: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.top header {
+  background-color: #e9d7c5;
+}
+
+.sub header {
+  background-color: #7e5639;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 24px;
+  padding-inline: 32px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 214px;
+}
+
+.header-nav {
+  padding-inline-start: 40px;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 32px;
+}
+
+.header-nav-text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.top .header-nav-text {
+  color: #333333;
+}
+
+.sub .header-nav-text {
+  color: #fff;
+}
+
+.header-button {
+  background-color: #4ab817;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding-block: 16px;
+  padding-inline: 32px;
+}
+
+@media screen and (max-width: 959px) {
+  .header-inner {
+    padding-inline: 24px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+  .header-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header-logo {
+    width: 160px;
+  }
+}
+
+/* ----------------------------------------------------------
+  ハンバーガーメニュー
+---------------------------------------------------------- */
+
+.hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 959px) {
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    right: 24px;
+    z-index: 100;
+  }
+  .top .hm-line {
+    fill: #5f6368;
+  }
+
+  .sub .hm-line {
+    fill: #fff;
+  }
+}
+
+/* ----------------------------------------------------------
+  SPナビ
+---------------------------------------------------------- */
+
+.sp-nav {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sp-nav.show {
+  display: flex;
+}
+
+@media screen and (max-width: 959px) {
+  .sp-nav {
+    padding-block: 40px;
+    padding-inline: auto;
+  }
+
+  .sp-nav-list li {
+    text-align: center;
+    margin-inline: auto;
+    padding-block-end: 32px;
+  }
+
+  .sp-nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+/* ----------------------------------------------------------
+  メイン　MV
+---------------------------------------------------------- */
+
+.mv {
+  background-image: url("images/top/mv.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-block: 64px;
+  padding-inline: 16px;
+  inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  margin-block-end: 64px;
+}
+
+.mv h2 {
+  color: #fff;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  filter: drop-shadow(0px 4px 4px #000000);
+}
+
+.mv p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 100;
+}
+
+.mv::before {
+  content: "";
+  background-color: #000000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.mv object {
+  z-index: 100;
+}
+
+@media screen and (max-width: 959px) {
+  .mv h2 {
+    font-size: 32px;
+  }
+  .mv p {
+    font-size: 20px;
+  }
+
+  .mv {
+    margin-block-end: 32px;
+    padding-block: 120px;
+    padding-inline: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mv {
+    background-image: url("images/top/mv_sp.jpg");
+  }
+}
+
+.mv-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  z-index: 100;
+}
+
+/* タブレット対応　縦（768px未満） */
+@media screen and (max-width: 767px) {
+  .mv-button {
+    flex-direction: column;
+  }
+
+  .line-link {
+    margin-block: 0px;
+  }
+}
+
+/* ----------------------------------------------------------
+  メイン　おすすめコース
+---------------------------------------------------------- */
+
+.top-courses {
+  margin-block-end: 64px;
+}
+
+.top-course-title {
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  inline-size: 100%;
+  padding-block-end: 16px;
+  margin-block-end: 40px;
+}
+.top-course-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #cfcfcf;
+}
+
+@media screen and (max-width: 959px) {
+  .top-course-title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+/* コースセクション */
+
+.t-course1 {
+  background-image: url("images/top/course1.png");
+}
+
+.t-course2 {
+  background-image: url("images/top/course2.png");
+}
+
+.t-course3 {
+  background-image: url("images/top/course3.png");
+}
+
+.t-course4 {
+  background-image: url("images/top/course4.png");
+}
+
+.top-name {
+  width: 230px;
+  height: 230px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.top-name div {
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.top-courses-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-block-end: 20px;
+}
+
+.top-course {
+  width: 230px;
+}
+.top-course p {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-align: justify;
+  margin: 0;
+}
+
+@media screen and (max-width: 959px) {
+  .top-name {
+    width: 240px;
+    height: 240px;
+  }
+
+  .top-course {
+    padding: 0;
+  }
+
+  .top-courses-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 10%;
+    gap: 36px 10%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-courses-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+/* 詳しく見るボタン　*/
+
+.more-link {
+  text-align: right;
+}
+
+.more-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 24px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media screen and (max-width: 959px) {
+  .more-link {
+    text-align: center;
+  }
+}
+
+/* ----------------------------------------------------------
+  CTAセクション（体験レッスン誘導）
+---------------------------------------------------------- */
+
+.common-apply {
+  max-inline-size: 1040px;
+  background-color: #fff6e1;
+  margin-inline: auto;
+  margin-block-end: 64px;
+  padding-inline: 16px;
+}
+
+.common-apply-inner {
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 24px;
+}
+
+.common-apply-messages {
+  text-align: center;
+  margin-block-end: 24px;
+  gap: 8px;
+}
+
+.common-apply-messages p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.common-apply-messages p:last-child {
+  color: #333333;
+  font-size: 14px;
+}
+
+.cta-button {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.messages-br-sp {
+  display: none;
+}
+@media screen and (max-width: 479px) {
+  .messages-br-sp {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 1072px) {
+  .common-apply {
+    margin-inline: 16px;
+    margin-block-end: 32px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .common-apply {
+    padding-inline: 16px;
+  }
+
+  .cta-button {
+    width: 240px;
+    padding-inline: 20px;
+  }
+}
+
+/* ----------------------------------------------------------
+  フッター
+---------------------------------------------------------- */
+
+footer {
+  max-inline-size: 100%;
+}
+
+.top footer {
+  background-color: #e9d7c5;
+}
+
+.sub footer {
+  background-color: #7e5639;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-block: 48px 40px;
+}
+
+.footer-logo {
+  width: 214px;
+}
+
+.footer-nav {
+  padding-inline-start: 32px;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-nav-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.top .footer-nav-text {
+  color: #333333;
+}
+
+.sub .footer-nav-text {
+  color: #fff;
+}
+
+.copy {
+  color: #333333;
+  font-size: 14px;
+  text-align: center;
+  padding-block-end: 40px;
+}
+
+.sub .copy {
+  color: #cfcfcf;
+}
+
+@media screen and (max-width: 959px) {
+  .footer-menu {
+    inline-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 40px 32px;
+    padding-inline: 0;
+    margin-inline: auto;
+    gap: 32px;
+  }
+
+  .footer-nav {
+    padding-inline-start: 0;
+  }
+
+  .footer-nav-list {
+    gap: 32px;
+  }
+  .footer-nav-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer-nav-list {
+    flex-direction: column;
+  }
+}
+
+/* ----------------------------------------------------------
+  ABOUT USページ用スタイル
+---------------------------------------------------------- */
+
+/* メイン　MV　*/
+
+.about-mv {
+  background-image: url(images/bg/bg_about.webp);
+  background-size: cover;
+  background-position: center center;
+  margin-block-end: 64px;
+}
+
+.about-mv img {
+  width: 507px;
+  padding-inline-end: 24px;
+}
+
+.about-mv-inner {
+  max-inline-size: 1040px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding-block: 32px;
+  padding-inline: 16px;
+  margin-block: 0;
+  margin-inline: auto;
+}
+
+.about-mv-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-mv-title {
+  color: #7e5639;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-block-end: 32px;
+}
+
+.about-mv-content p {
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 959px) {
+  .about-mv {
+    margin-block-end: 32px;
+  }
+
+  .about-mv img {
+    width: 704px;
+    padding-inline-end: 0;
+  }
+
+  .about-mv-title {
+    font-size: 32px;
+    text-align: center;
+    margin-block-end: 20px;
+  }
+
+  .about-mv-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 0;
+    margin-inline: 32px;
+  }
+
+  .about-mv-content p {
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-mv img {
+    width: 311px;
+    height: 318px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    margin-inline: auto;
+    margin-block: 0 32px;
+  }
+
+  .about-mv-title {
+    font-size: 28px;
+  }
+}
+
+/*　ABOUT　US　メイン　*/
+
+.about-content-inner img {
+  width: 400px;
+  border-radius: 16px;
+}
+
+.about-content-title {
+  color: #7e5639;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding-block-end: 32px;
+}
+
+.about-content-text {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+/* 写真+見出し+本文　並び */
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 24px;
+  margin-block: 0 64px;
+}
+
+.about-section-reverse {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 959px) {
+  .about-section {
+    max-inline-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: auto;
+    margin-block-end: 32px;
+  }
+  .about-content-inner {
+    margin-block-end: 64px;
+  }
+  .about-content-inner img {
+    width: 343px;
+  }
+
+  .about-content-title {
+    font-size: 24px;
+    padding-block-end: 24px;
+  }
+}
+
+/*　クチコミ　review　*/
+
+.about-review-inner {
+  margin-block-end: 64px;
+}
+
+.about-review-title {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: start;
+  border-bottom: 1px solid #cfcfcf;
+  padding-block-end: 16px;
+  margin-block-end: 40px;
+}
+
+.about-review-img {
+  block-size: 120px;
+}
+
+.about-review-content-wrap {
+  max-inline-size: 840px;
+  margin-inline: auto;
+}
+
+.about-review-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.about-review-content + .about-review-content {
+  margin-block-start: 24px;
+}
+
+.about-review-wrap {
+  background-color: #ffeeea;
+  border-radius: 16px;
+  padding-block: 16px;
+  padding-inline: 16px;
+}
+
+.about-review-text span {
+  color: #f76140;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.about-review-text {
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+.about-review-name {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+.about-cta-btn {
+  height: 57px;
+}
+
+@media screen and (max-width: 959px) {
+  .about-review-inner {
+    max-inline-size: 100%;
+    margin-inline: auto;
+  }
+  .about-review-title {
+    font-size: 24px;
+  }
+
+  .about-review-content-wrap {
+    max-inline-size: 100%;
+    margin-inline: auto;
+  }
+
+  .about-review-text span {
+    font-size: 16px;
+  }
+
+  .about-review-text {
+    font-size: 16px;
+  }
+}
+
+/* ----------------------------------------------------------
+  COURSEページ用スタイル
+---------------------------------------------------------- */
+
+/* メイン　ページタイトル　COURSEページ+CONTACTページ共通　*/
+
+.page-title {
+  background-image: url(images/bg/lower_fv.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-block: 64px;
+  padding-inline: 16px;
+  margin-block-end: 64px;
+}
+.page-title h1 {
+  color: #7e5639;
+  font-size: 36px;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 959px) {
+  .page-title {
+    padding-block: 32px;
+    margin-block-end: 32px;
+  }
+  .page-title h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .page-title h1 {
+    font-size: 28px;
+  }
+}
+
+/* メイン　コース内容の説明　*/
+
+.course-introduction {
+  margin-block-end: 64px;
+}
+
+.course-introduction h2 {
+  border-bottom: none;
+  color: #7e5639;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding-block: 0;
+  margin-block-end: 32px;
+}
+
+.course-introduction-lead {
+  font-size: 20px;
+  font-weight: bold;
+  margin-block-end: 16px;
+}
+
+.course-introduction-text {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 959px) {
+  .course-introduction h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-block-end: 20px;
+  }
+
+  .course-introduction-lead {
+    font-size: 20px;
+  }
+}
+
+/*  メイン：コース一覧  */
+
+.courses-wrap {
+  margin-block-end: 64px;
+}
+
+/* COURSEページとCONTACTページ　タイトル共通　*/
+
+.content-title-under-line {
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  inline-size: 100%;
+  padding-block-end: 16px;
+  margin-block-end: 40px;
+}
+
+.content-title-under-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #cfcfcf;
+}
+
+@media screen and (max-width: 959px) {
+  .courses-wrap {
+    margin-block-end: 32px;
+  }
+
+  .content-title-under-line {
+    font-size: 24px;
+    text-align: center;
+    margin-inline: auto;
+  }
+}
+
+.course1 {
+  background-image: url("images/course/course1.png");
+}
+
+.course2 {
+  background-image: url("images/course/course2.png");
+}
+
+.course3 {
+  background-image: url("images/course/course3.png");
+}
+
+.course4 {
+  background-image: url("images/course/course4.png");
+}
+
+.course5 {
+  background-image: url("images/course/course5.png");
+}
+
+.course6 {
+  background-image: url("images/course/course6.png");
+}
+
+.course7 {
+  background-image: url("images/course/course7.png");
+}
+
+.course8 {
+  background-image: url("images/course/course8.png");
+}
+
+/*  メイン：コース　写真+タイトル+本文  */
+
+.name {
+  width: 230px;
+  height: 230px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-end: 16px;
+}
+
+.name div {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fff;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.course p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-align: justify;
+  margin: 0;
+}
+
+.courses {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.course {
+  width: 230px;
+}
+
+@media screen and (max-width: 959px) {
+  .name {
+    width: 161px;
+    height: 161px;
+    margin-inline: auto;
+    margin-block: 0 16px;
+  }
+
+  .name div {
+    font-size: 20px;
+  }
+
+  .course {
+    width: 200px;
+  }
+
+  .courses {
+    gap: 36px 72px;
+    justify-content: center;
+    padding-block: 0;
+    padding-inline: 10%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .courses {
+    max-width: 520px;
+    gap: 36px 21px;
+    padding: 0;
+    margin-inline: auto;
+    margin-block: 0;
+  }
+
+  .course {
+    width: 161px;
+  }
+}
+
+/* ----------------------------------------------------------
+  COURSEページ用スタイル
+---------------------------------------------------------- */
+/* メイン：マップ（.contact-info） */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-block-end: 64px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-block-end: 16px;
+}
+
+.contact-info-map {
+  max-inline-size: 1040px;
+  margin: 0 auto;
+}
+
+.contact-info-map iframe {
+  inline-size: 1040px;
+  max-inline-size: 100%;
+  height: 450px;
+  border: 0;
+}
+
+@media screen and (max-width: 959px) {
+  .contact-info h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-block: 0;
+    margin-inline: auto;
+  }
+
+  .contact-info p {
+    margin-block: 20px;
+  }
+}
+
+/* メイン：会社情報テーブル（.company-info）*/
+
+.company-info {
+  margin-block-end: 64px;
+}
+
+.company-table {
+  inline-size: 100%;
+  border-collapse: collapse;
+}
+
+.info-label {
+  background-color: #f6f1e6;
+  border-bottom: 8px solid #fff;
+  max-inline-size: 280px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding-block: 8px;
+  padding-inline: 16px;
+  text-align: start;
+}
+
+.info-detail {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  padding-block: 8px;
+  padding-inline: 24px 16px;
+}
+
+.info-detail span {
+  white-space: nowrap;
+}
+
+.br-sp {
+  display: none;
+}
+
+@media screen and (max-width: 409px) {
+  .br-sp {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .info-label {
+    max-inline-size: 200px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .info-label {
+    inline-size: 120px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .info-label {
+    text-align: center;
+  }
+}
+
+/* CONTACTページ　CTAボタン　*/
+
+@media screen and (max-width: 340px) {
+  .contact-cta-btn {
+    width: 240px;
+    padding-inline: 16px;
+  }
+}
