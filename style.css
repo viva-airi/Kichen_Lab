@@ -26,7 +26,7 @@ body {
   border-radius: 8px;
   color: #fff;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   display: flex;
   flex-direction: column;
@@ -50,7 +50,7 @@ body {
   border-radius: 16px;
   color: #4ab817;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   padding-block: 2px;
   padding-inline: 16px;
 }
@@ -110,7 +110,7 @@ header {
 .header-nav-text {
   color: #fff;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -127,7 +127,7 @@ header {
   border-radius: 8px;
   color: #fff;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   padding-block: 16px;
   padding-inline: 32px;
@@ -238,7 +238,7 @@ header {
 .mv h1 {
   color: #fff;
   font-size: 56px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.2em;
   filter: drop-shadow(0px 4px 4px #000000);
 }
@@ -246,7 +246,7 @@ header {
 .mv p {
   color: #fff;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   z-index: 100;
 }
@@ -298,7 +298,7 @@ header {
   border-radius: 8px;
   color: #fff;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   display: flex;
   flex-direction: column;
@@ -320,7 +320,7 @@ header {
   border-radius: 16px;
   color: #4ab817;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   padding-block: 2px;
   padding-inline: 16px;
 }
@@ -359,7 +359,7 @@ header {
 .top-course-title {
   position: relative;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   inline-size: 100%;
   padding-block-end: 16px;
@@ -413,7 +413,7 @@ header {
 
 .top-name div {
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   letter-spacing: 0.1em;
   text-align: center;
@@ -527,7 +527,7 @@ header {
 
 .common-apply-messages p:first-child {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .common-apply-messages p:last-child {
@@ -619,7 +619,7 @@ footer {
 
 .footer-nav-text {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .top .footer-nav-text {
@@ -713,7 +713,7 @@ footer {
 .about-mv-title {
   color: #7e5639;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   margin-block-end: 32px;
 }
@@ -839,7 +839,7 @@ footer {
 
 .about-review-title {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-align: start;
   border-bottom: 1px solid #cfcfcf;
@@ -877,7 +877,7 @@ footer {
 .about-review-text span {
   color: #f76140;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
 }
 
@@ -970,7 +970,7 @@ footer {
   border-bottom: none;
   color: #7e5639;
   font-size: 32px;
-  font-weight: 600px;
+  font-weight: 700;
   letter-spacing: 0.1em;
   padding-block: 0;
   margin-block-end: 32px;
@@ -978,7 +978,7 @@ footer {
 
 .course-introduction-lead {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   margin-block-end: 16px;
 }
 
@@ -1011,7 +1011,7 @@ footer {
 .content-title-under-line {
   position: relative;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   inline-size: 100%;
   padding-block-end: 16px;
@@ -1087,7 +1087,7 @@ footer {
 
 .name div {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-align: center;
   color: #fff;
@@ -1214,7 +1214,7 @@ footer {
   border-bottom: 8px solid #fff;
   max-inline-size: 280px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   padding-block: 8px;
   padding-inline: 16px;
